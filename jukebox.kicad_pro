@@ -415,6 +415,18 @@
     [
       "08ac9416-6a8d-4ec2-b459-a3ad44a731cb",
       "power"
+    ],
+    [
+      "571c56e5-c798-494c-9313-defc96770fcd",
+      "sd_card"
+    ],
+    [
+      "c6b3536d-842a-485c-ace2-2998012aef86",
+      "rfid"
+    ],
+    [
+      "58aa8eb1-6419-4649-9641-e1795f62a7f1",
+      "amp"
     ]
   ],
   "text_variables": {}
