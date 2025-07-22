@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "7607dbf9-ea97-4c2e-bd78-7ef4013b2433")
 	(paper "A4")
+	(title_block
+		(title "Amplifier Module")
+		(date "2025-07-22")
+		(rev "1.0")
+		(company "C.Boerner")
+	)
 	(lib_symbols
 		(symbol "Audio:MAX98357A"
 			(exclude_from_sim no)
@@ -1288,10 +1294,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "1b053ffe-21a4-4902-afa9-dc0fea46f236")
+			(uuid "81e2f4d3-c20f-49b8-af65-ee16c05c61c3")
 		)
 		(pin "1"
-			(uuid "0adc02e2-1386-4534-8e83-8a1cc0e1a42e")
+			(uuid "978da228-424a-47bf-a0a9-59d71319b059")
 		)
 		(instances
 			(project "jukebox"
@@ -1366,18 +1372,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5ab0f174-e94b-4842-bc3c-751766ad5ada")
+			(uuid "ec27f8d5-ecae-4c80-972c-0da75412c99a")
 		)
 		(pin "1"
-			(uuid "18340ea0-341c-48ad-8526-254972594562")
-		)
-		(instances
-			(project ""
-				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
-					(reference "LS1")
-					(unit 1)
-				)
-			)
+			(uuid "6e2a3cd5-80a3-4c88-a586-97d9d7a6c56a")
 		)
 	)
 	(symbol
@@ -1436,10 +1434,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c662fb19-fd07-46f8-8d05-dc5f94182059")
+			(uuid "5f79b1ff-5b55-47dd-8b37-f260241c0905")
 		)
 		(pin "1"
-			(uuid "99b53504-1f2e-46ba-8f8c-81d80631df8f")
+			(uuid "5b1928ea-1ff9-4468-888e-fcf1dbebc424")
 		)
 		(instances
 			(project "jukebox"
@@ -1506,7 +1504,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d7e80233-b174-4f2c-b7b7-c943b7192403")
+			(uuid "3196c064-db51-413e-ba9c-9301d135d502")
 		)
 		(instances
 			(project "jukebox"
@@ -1527,7 +1525,7 @@
 		(dnp no)
 		(uuid "61e10739-f007-414b-bfbe-08369af6f2f5")
 		(property "Reference" "C5"
-			(at 138.43 60.9599 0)
+			(at 139.7 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,7 +1534,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 138.43 63.4999 0)
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1572,18 +1570,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "da0ae06b-a282-41b0-820b-220438c22f0a")
+			(uuid "cbe7e108-8327-46e0-a0bb-88f523e61f72")
 		)
 		(pin "1"
-			(uuid "91c9ea36-9578-4545-b395-3f5fa96611c2")
-		)
-		(instances
-			(project ""
-				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
-					(reference "C5")
-					(unit 1)
-				)
-			)
+			(uuid "9b0adfed-e20e-47f2-ab24-1ef7eaaeba17")
 		)
 	)
 	(symbol
@@ -1641,7 +1631,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b14591bc-2b76-4e92-8d37-8b466b26b902")
+			(uuid "4909633f-b9db-43bc-b06e-cc4b19710550")
 		)
 		(instances
 			(project ""
@@ -1708,63 +1698,55 @@
 			)
 		)
 		(pin "6"
-			(uuid "3b990ed0-df75-4e14-9e52-94f038cbc107")
+			(uuid "9c490358-9940-4573-9b58-de482533fb89")
 		)
 		(pin "11"
-			(uuid "31f647a3-128a-4d34-9377-f2fc62840f59")
+			(uuid "dda12a4b-1a01-4237-b245-7de96e233ff8")
 		)
 		(pin "8"
-			(uuid "f43936c3-d62e-4d4c-83bb-4917f813c157")
+			(uuid "0dad9274-0665-4d7a-bbd2-73e92afde8b4")
 		)
 		(pin "17"
-			(uuid "d0d1bbf7-e348-4127-bc1d-46234c95bd29")
+			(uuid "b46e5449-b843-46a3-b643-1535e337ad33")
 		)
 		(pin "5"
-			(uuid "83ba61f7-c3b9-4767-ad33-639af38268eb")
+			(uuid "7196f1ff-29b8-4344-9a95-7ac9dff423da")
 		)
 		(pin "1"
-			(uuid "146185ed-1178-4705-bbb8-edd68bd227b2")
+			(uuid "234cf7b4-a4c6-43a9-af6f-588fc9a3140f")
 		)
 		(pin "2"
-			(uuid "0f255667-8e37-4e27-ade8-851d09293f3b")
+			(uuid "d84f444f-58a4-41cb-8576-553bf34c33ac")
 		)
 		(pin "4"
-			(uuid "8b1c4524-3320-42fb-919c-c94e09ce1fa9")
+			(uuid "419597b4-ad90-48d3-b7a4-c1f4ba916343")
 		)
 		(pin "3"
-			(uuid "be95f1c6-19a4-448d-b47a-393fdc2e7084")
+			(uuid "d6137624-4a31-45a5-be95-e7b67b15b8d1")
 		)
 		(pin "7"
-			(uuid "ccdaaba9-205b-49cf-9ff3-b31ee832c587")
+			(uuid "a7d8ee23-9b95-42a6-954d-8718cccc9682")
 		)
 		(pin "12"
-			(uuid "1f0e5248-ea8e-43ef-be34-bc18c75703c1")
+			(uuid "ade74c94-6326-4d42-b255-0ff301278534")
 		)
 		(pin "15"
-			(uuid "4e8c5003-d6fd-44dd-9a84-85e891d7739d")
+			(uuid "2a758911-1f17-4d13-ad01-e96c5eafc96e")
 		)
 		(pin "10"
-			(uuid "af9a58d1-7ce5-40b8-974b-e27d45c42c49")
+			(uuid "0c4d670d-0b5e-4bd5-be85-bd13c9e4b0d9")
 		)
 		(pin "14"
-			(uuid "26b0eb4d-00c6-4345-a3c2-ef1333cbd6a9")
+			(uuid "d3c8e779-11f2-4c99-9c88-0202d61f6b8b")
 		)
 		(pin "9"
-			(uuid "33cef1d0-d754-438f-a5de-d6425322272e")
+			(uuid "a1b25381-7fa3-4353-a273-5db4ad3f75b1")
 		)
 		(pin "16"
-			(uuid "7ecf232a-1ac4-4a2c-b950-32d139e48542")
+			(uuid "39c5c2bd-9778-4ec5-9c5c-ce7c137b6502")
 		)
 		(pin "13"
-			(uuid "453cabc9-a2f1-469f-864d-b09b1626f7f6")
-		)
-		(instances
-			(project ""
-				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
-					(reference "U2")
-					(unit 1)
-				)
-			)
+			(uuid "959d3a63-66eb-472c-8a31-6b4d33f4df06")
 		)
 	)
 	(symbol
@@ -1823,10 +1805,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8a643dc3-e6a4-473a-92d7-ed1dae1df8fc")
+			(uuid "8928ac0a-49d1-4b14-8054-c762c39e74c0")
 		)
 		(pin "1"
-			(uuid "5ad0facf-a72c-49b4-ada6-73e638f9e91a")
+			(uuid "1d622b1f-0ee9-458f-9328-b9ca90470ca1")
 		)
 		(instances
 			(project "jukebox"

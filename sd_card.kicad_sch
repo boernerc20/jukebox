@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "a2be7eb2-b68a-4027-a6c8-9f44adb3dcee")
 	(paper "A4")
+	(title_block
+		(title "SD Card Module")
+		(date "2025-07-22")
+		(rev "1.0")
+		(company "C. Boerner")
+	)
 	(lib_symbols
 		(symbol "Connector:Micro_SD_Card"
 			(pin_names
