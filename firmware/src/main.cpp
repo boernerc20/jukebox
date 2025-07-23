@@ -84,12 +84,15 @@
 #define I2S_LRC   25  // also called WS or LRCK
 #define I2S_DOUT  22  // also called DIN or DATA
 
+// Potentiometer pin for volume control
+#define POT_PIN 34
+
 AudioGeneratorWAV *wav;
 AudioFileSourceSD *file;
 AudioOutputI2S *out;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // Init SD
   SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI);
@@ -101,15 +104,23 @@ void setup() {
   // Init I2S output
   out = new AudioOutputI2S();
   out->SetPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
-  out->SetGain(0.6);  // Set volume (0.0 to 1.0)
+  out->SetGain(0.2);  // Set volume (0.0 to 1.0)
 
   // Load WAV file
-  file = new AudioFileSourceSD("/aria.wav");
+  file = new AudioFileSourceSD("/aria-mono.wav");
   wav = new AudioGeneratorWAV();
   wav->begin(file, out);
+
+  pinMode(POT_PIN, INPUT);
 }
 
 void loop() {
+  // Read potentiometer value (0-4095 for 12-bit ADC)
+  int potValue = analogRead(POT_PIN);
+  // Map to gain (0.0 to 1.0)
+  float gain = potValue / 4095.0;
+  out->SetGain(gain);
+
   if (wav->isRunning()) {
     if (!wav->loop()) wav->stop();
   } else {

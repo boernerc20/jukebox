@@ -1377,6 +1377,14 @@
 		(pin "1"
 			(uuid "6e2a3cd5-80a3-4c88-a586-97d9d7a6c56a")
 		)
+		(instances
+			(project "jukebox"
+				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
+					(reference "LS1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1575,6 +1583,14 @@
 		(pin "1"
 			(uuid "9b0adfed-e20e-47f2-ab24-1ef7eaaeba17")
 		)
+		(instances
+			(project "jukebox"
+				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1747,6 +1763,14 @@
 		)
 		(pin "13"
 			(uuid "959d3a63-66eb-472c-8a31-6b4d33f4df06")
+		)
+		(instances
+			(project "jukebox"
+				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
+					(reference "U2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
