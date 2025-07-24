@@ -1,4 +1,4 @@
-#include "include/audio.h"
+#include "audio.h"
 #include <FS.h>
 #include <SD.h>
 #include <SPI.h>
@@ -25,7 +25,7 @@ AudioFileSourceSD *file;
 AudioOutputI2S *out;
 
 void audioSetup() {
-    Serial.begin(9600);
+    Serial.begin(115200);
 
     // Init SD
     SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI);

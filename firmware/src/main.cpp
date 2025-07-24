@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "include/audio.h"
-#include "include/rfid.h"
+#include "audio/audio.h"
+#include "rfid/rfid.h"
 
 void setup() {
     // Uncomment one of these to test the module

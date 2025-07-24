@@ -1,7 +1,8 @@
-#include "include/rfid.h"
+#include "rfid.h"
 #include <HardwareSerial.h>
 #include <PN532.h>
 #include <PN532_HSU.h>
+#include "include/tag_song_map.h"
 
 #define PN532_RX_PIN 16
 #define PN532_TX_PIN 17
@@ -50,6 +51,16 @@ void rfidLoop() {
         dispTag = tagId;
         Serial.print(F("tagId is : "));
         Serial.println(tagId);
+                // Map tag to CD number
+        uint8_t cdNumber = getCdNumberForTag(tagId);
+        if (cdNumber > 0) {
+            Serial.print("Mapped to CD number: ");
+            Serial.println(cdNumber);
+            // TODO: Call your audio playback function here, e.g.:
+            // playSong(cdNumber);
+        } else {
+            Serial.println("Tag not recognized!");
+        }
         Serial.println("");
         delay(1000);
     } else {
