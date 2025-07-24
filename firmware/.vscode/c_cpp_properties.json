@@ -215,6 +215,7 @@
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/dio_qspi/include",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/cores/esp32",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/variants/esp32",
+                "/home/chris/docs/pcb/jukebox/firmware/lib/PN532",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src",
@@ -452,6 +453,7 @@
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/dio_qspi/include",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/cores/esp32",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/variants/esp32",
+                    "/home/chris/docs/pcb/jukebox/firmware/lib/PN532",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/ArduinoOTA/src",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/AsyncUDP/src",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src",
@@ -502,7 +504,7 @@
             ],
             "cStandard": "gnu99",
             "cppStandard": "gnu++11",
-            "compilerPath": "/home/chris/.platformio/packages/toolchain-xtensa-esp32@8.4.0+2021r2-patch5/bin/xtensa-esp32-elf-gcc",
+            "compilerPath": "/home/chris/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc",
             "compilerArgs": [
                 "-mlongcalls",
                 ""
