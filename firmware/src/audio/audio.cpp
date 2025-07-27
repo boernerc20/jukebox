@@ -20,9 +20,9 @@
 // Potentiometer pin for volume control
 #define POT_PIN 34
 
-AudioGeneratorWAV *wav;
-AudioFileSourceSD *file;
-AudioOutputI2S *out;
+AudioGeneratorWAV *wav = nullptr;
+AudioFileSourceSD *file = nullptr;
+AudioOutputI2S *out = nullptr;
 
 void audioSetup() {
     Serial.begin(115200);
@@ -37,24 +37,60 @@ void audioSetup() {
     // Init I2S output
     out = new AudioOutputI2S();
     out->SetPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
-    out->SetGain(0.2);
-
-    // Load WAV file
-    file = new AudioFileSourceSD("/aria-mono.wav");
-    wav = new AudioGeneratorWAV();
-    wav->begin(file, out);
+    out->SetGain(0.4);
 
     pinMode(POT_PIN, INPUT);
+
+    delay(1000); // Give time for serial monitor to connect
+    // List files on SD card
+    File root = SD.open("/");
+    while (true) {
+        File entry = root.openNextFile();
+        if (!entry) break;
+        Serial.println(entry.name());
+        entry.close();
+    }
+
+    // Do NOT start any song here
 }
 
 void audioLoop() {
     int potValue = analogRead(POT_PIN);
     float gain = potValue / 4095.0;
-    out->SetGain(gain);
+    if (out) out->SetGain(gain);
 
-    if (wav->isRunning()) {
-        if (!wav->loop()) wav->stop();
-    } else {
-        delay(1000);
+    if (wav && wav->isRunning()) {
+        if (!wav->loop()) {
+            wav->stop();
+            delete wav;
+            wav = nullptr;
+            if (file) {
+                delete file;
+                file = nullptr;
+            }
+        }
     }
+    // If nothing is playing, do nothing
+}
+
+void playSong(const char* filename) {
+    // Stop any currently playing song
+    if (wav && wav->isRunning()) {
+        wav->stop();
+        delete wav;
+        wav = nullptr;
+    }
+    if (file) {
+        delete file;
+        file = nullptr;
+    }
+
+    // Open new file and start playback
+    String path = "/";
+    path += filename;
+    file = new AudioFileSourceSD(path.c_str());
+    wav = new AudioGeneratorWAV();
+    wav->begin(file, out);
+    Serial.print("Started playing: ");
+    Serial.println(path);
 }

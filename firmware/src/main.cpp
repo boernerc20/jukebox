@@ -3,13 +3,15 @@
 #include "rfid/rfid.h"
 
 void setup() {
-    // Uncomment one of these to test the module
-    // audioSetup();
+    audioSetup();
     rfidSetup();
+    // playSong("aria-mono.wav"); // Start with a default song
 }
 
 void loop() {
-    // Uncomment one of these to test the module
-    // audioLoop();
+    audioLoop();
     rfidLoop();
+    // debugPrintTag();
+    // delay(500); 
+
 }
