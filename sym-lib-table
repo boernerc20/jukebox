@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "ABM8-27.120MHz-10-B1U-T")(type "KiCad")(uri "${KIPRJMOD}/libs/ABM8/ABM8-27.120MHz-10-B1U-T.kicad_sym")(options "")(descr ""))
-)
