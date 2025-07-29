@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/chris/docs/pcb/jukebox/2. Firmware/include",
-                "/home/chris/docs/pcb/jukebox/2. Firmware/src",
-                "/home/chris/docs/pcb/jukebox/2. Firmware/lib/PN532",
-                "/home/chris/docs/pcb/jukebox/2. Firmware/.pio/libdeps/esp32dev/ESP8266Audio/src",
+                "/home/chris/docs/pcb/jukebox/2.Firmware/include",
+                "/home/chris/docs/pcb/jukebox/2.Firmware/src",
+                "/home/chris/docs/pcb/jukebox/2.Firmware/lib/PN532",
+                "/home/chris/docs/pcb/jukebox/2.Firmware/.pio/libdeps/esp32dev/ESP8266Audio/src",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/SD/src",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                 "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
@@ -246,10 +246,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/chris/docs/pcb/jukebox/2. Firmware/include",
-                    "/home/chris/docs/pcb/jukebox/2. Firmware/src",
-                    "/home/chris/docs/pcb/jukebox/2. Firmware/lib/PN532",
-                    "/home/chris/docs/pcb/jukebox/2. Firmware/.pio/libdeps/esp32dev/ESP8266Audio/src",
+                    "/home/chris/docs/pcb/jukebox/2.Firmware/include",
+                    "/home/chris/docs/pcb/jukebox/2.Firmware/src",
+                    "/home/chris/docs/pcb/jukebox/2.Firmware/lib/PN532",
+                    "/home/chris/docs/pcb/jukebox/2.Firmware/.pio/libdeps/esp32dev/ESP8266Audio/src",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/SD/src",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                     "/home/chris/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
