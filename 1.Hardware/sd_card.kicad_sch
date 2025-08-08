@@ -1220,7 +1220,7 @@
 		)
 		(uuid "31c9cee5-0a98-4248-8146-c565253b5f2e")
 	)
-	(hierarchical_label "SS"
+	(hierarchical_label "CS"
 		(shape input)
 		(at 158.75 72.39 0)
 		(effects

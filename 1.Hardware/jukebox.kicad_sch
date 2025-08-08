@@ -10152,9 +10152,9 @@
 				(justify left)
 			)
 		)
-		(pin "SS" input
+		(pin "CS" input
 			(at 228.6 142.24 180)
-			(uuid "534fcde3-f95e-4907-b8a5-ec36eb1a127d")
+			(uuid "4352c293-21b4-4a0e-b624-2d313ade8303")
 			(effects
 				(font
 					(size 1.27 1.27)
