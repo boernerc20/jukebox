@@ -2272,6 +2272,10 @@
 		(uuid "0d47a48e-6d82-45b8-a22c-27d5e47fe551")
 	)
 	(no_connect
+		(at 165.1 101.6)
+		(uuid "26c14d31-61d5-4a4b-a3c9-05be3b1c5478")
+	)
+	(no_connect
 		(at 128.27 118.11)
 		(uuid "33e63da0-d952-49a7-83cc-468080a795f6")
 	)
@@ -2282,6 +2286,10 @@
 	(no_connect
 		(at 111.76 76.2)
 		(uuid "80b91a85-d853-4179-8973-b396567420db")
+	)
+	(no_connect
+		(at 165.1 97.79)
+		(uuid "939520e5-5821-4dfe-9f2f-79054563e813")
 	)
 	(no_connect
 		(at 165.1 86.36)
@@ -2511,16 +2519,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 97.79) (xy 173.99 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "312ce92c-de3f-4782-a456-fd301693a8f2")
-	)
-	(wire
-		(pts
 			(xy 105.41 63.5) (xy 101.6 63.5)
 		)
 		(stroke
@@ -2668,16 +2666,6 @@
 			(type default)
 		)
 		(uuid "4f9072b4-53d1-4d09-acaa-097908369e61")
-	)
-	(wire
-		(pts
-			(xy 165.1 101.6) (xy 166.37 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5471f50c-55bc-4b6f-adca-87c5b49b7e40")
 	)
 	(wire
 		(pts
@@ -3579,6 +3567,26 @@
 		)
 		(uuid "fb33abb7-47d0-43d4-bd84-3e5d050f7928")
 	)
+	(label "RXD"
+		(at 215.9 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99b132bc-e90f-4006-a9e6-689924b4bb28")
+	)
+	(label "TXD"
+		(at 215.9 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2a82bee-ff4a-4ba5-9f90-68f88ab1cc6b")
+	)
 	(global_label "VDD33"
 		(shape input)
 		(at 110.49 52.07 180)
@@ -3754,50 +3762,6 @@
 				(hide yes)
 			)
 		)
-	)
-	(hierarchical_label "RSTOUT"
-		(shape input)
-		(at 173.99 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2f8d8c22-5643-40d7-bef2-19c6cf675d04")
-	)
-	(hierarchical_label "RXD"
-		(shape input)
-		(at 215.9 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "898be500-17f5-4167-be40-9cf1b39f1f72")
-	)
-	(hierarchical_label "TXD"
-		(shape input)
-		(at 215.9 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d55a39f6-b20a-415d-aa1b-0313e36cc0e7")
-	)
-	(hierarchical_label "IRQ"
-		(shape input)
-		(at 173.99 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e8db660a-18f0-470e-8e93-d2802d32a1ff")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5945,73 +5909,6 @@
 			(project "jukebox"
 				(path "/d400bd10-35e9-4717-b347-ccb991be6072/c6b3536d-842a-485c-ace2-2998012aef86"
 					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 170.18 101.6 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a11c6548-d994-499b-ae3f-1bae5b16d3f7")
-		(property "Reference" "R16"
-			(at 170.18 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 170.18 104.394 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 99.822 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 170.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 170.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c2421439-2cac-4c35-96cd-d631b2ae73bd")
-		)
-		(pin "1"
-			(uuid "1f9a7b23-4a47-417e-af7e-b46042da947d")
-		)
-		(instances
-			(project "jukebox"
-				(path "/d400bd10-35e9-4717-b347-ccb991be6072/c6b3536d-842a-485c-ace2-2998012aef86"
-					(reference "R16")
 					(unit 1)
 				)
 			)

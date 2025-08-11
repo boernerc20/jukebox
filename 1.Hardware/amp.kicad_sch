@@ -15,20 +15,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -8.89 11.43 0)
+			(property "Reference" "U2"
+				(at 2.1433 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "MAX98357A"
-				(at 10.16 11.43 0)
+				(at 2.1433 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm"
@@ -56,6 +58,14 @@
 						(size 1.27 1.27)
 					)
 					(hide yes)
+				)
+			)
+			(property "Purpose" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(property "ki_keywords" "pcm tdm i2s left-justified amplifier audio dac"
@@ -384,7 +394,7 @@
 					)
 				)
 				(pin output line
-					(at 12.7 5.08 180)
+					(at 12.7 3.81 180)
 					(length 2.54)
 					(name "OUTN"
 						(effects
@@ -525,6 +535,157 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -874,16 +1035,16 @@
 		)
 	)
 	(junction
-		(at 165.1 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "01af0967-294f-430e-9922-b118da95df6c")
-	)
-	(junction
 		(at 137.16 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d93a78b-b68f-4465-a6a6-1fd64ea4b957")
+	)
+	(junction
+		(at 165.1 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85b83022-a933-41df-9f0c-e5347d62e52d")
 	)
 	(junction
 		(at 137.16 71.12)
@@ -892,16 +1053,16 @@
 		(uuid "9ad65bdb-e5d3-4eff-9000-82f7d4d313da")
 	)
 	(junction
-		(at 177.8 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b0fbf6d-e1a3-4e1a-9168-715b7b7f0ad9")
-	)
-	(junction
 		(at 165.1 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3135eab-49e6-4a02-bf54-57de575c6577")
+	)
+	(junction
+		(at 177.8 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dca8aa09-27b4-407b-a6b6-fa54fd0b4e86")
 	)
 	(junction
 		(at 134.62 101.6)
@@ -925,7 +1086,17 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 92.71) (xy 165.1 101.6)
+			(xy 181.61 82.55) (xy 181.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0be89a5c-076e-41b6-a5bd-ae9a4262bf94")
+	)
+	(wire
+		(pts
+			(xy 165.1 96.52) (xy 165.1 101.6)
 		)
 		(stroke
 			(width 0)
@@ -955,7 +1126,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 81.28) (xy 181.61 81.28)
+			(xy 165.1 82.55) (xy 181.61 82.55)
 		)
 		(stroke
 			(width 0)
@@ -965,13 +1136,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 78.74) (xy 177.8 78.74)
+			(xy 157.48 78.74) (xy 177.8 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e8fe82b-019d-417b-a090-de4a46581f01")
+		(uuid "47e7f3a1-1d24-4460-b2a6-7d429cf162ac")
 	)
 	(wire
 		(pts
@@ -1005,13 +1176,23 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 92.71) (xy 177.8 101.6)
+			(xy 177.8 96.52) (xy 177.8 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7b7deec7-a404-48e9-8e61-4c6b2f943ec8")
+	)
+	(wire
+		(pts
+			(xy 149.86 78.74) (xy 152.4 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bedba87-7ecd-449f-9e9c-c336a8556856")
 	)
 	(wire
 		(pts
@@ -1032,16 +1213,6 @@
 			(type default)
 		)
 		(uuid "81b31384-0926-4015-8f54-9c42e2e464b7")
-	)
-	(wire
-		(pts
-			(xy 149.86 81.28) (xy 165.1 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8689c824-6e68-4d1d-bb0c-344c36f3c1e2")
 	)
 	(wire
 		(pts
@@ -1115,7 +1286,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 78.74) (xy 177.8 85.09)
+			(xy 149.86 82.55) (xy 152.4 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8a5d17b-3aa4-4d38-a6b7-7d79e2ae6399")
+	)
+	(wire
+		(pts
+			(xy 177.8 78.74) (xy 177.8 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1135,13 +1316,23 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 81.28) (xy 165.1 85.09)
+			(xy 165.1 82.55) (xy 165.1 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cf71b41e-cf9a-4399-981e-d120fb9d3aff")
+	)
+	(wire
+		(pts
+			(xy 157.48 82.55) (xy 165.1 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d01fa1ba-f8a9-45b1-8a5e-d8ce5657ee1a")
 	)
 	(wire
 		(pts
@@ -1239,35 +1430,33 @@
 		(uuid "a9d81d47-7b65-4cb2-824c-cce72fcb02a9")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 165.1 88.9 0)
+		(lib_id "Device:FerriteBead_Small")
+		(at 154.94 82.55 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3557a9bb-a2df-4c00-adb8-6b2dbcd1f434")
-		(property "Reference" "C7"
-			(at 168.91 87.6299 0)
+		(uuid "0d6b650a-219b-450c-a703-a4bd026d36b0")
+		(property "Reference" "FB2"
+			(at 154.94 86.995 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "220p"
-			(at 168.91 90.1699 0)
+		(property "Value" "Ferrite"
+			(at 156.21 89.535 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 166.0652 92.71 0)
+		(property "Footprint" "BLM21:BEADC2012X105N"
+			(at 154.94 80.772 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1276,7 +1465,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 88.9 0)
+			(at 154.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 154.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee75dd85-fb6e-4a04-9292-d0acd5b9ee2d")
+		)
+		(pin "2"
+			(uuid "f4904bb9-653d-4644-aa55-a6abda3b1e6c")
+		)
+		(instances
+			(project "jukebox"
+				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
+					(reference "FB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 165.1 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3557a9bb-a2df-4c00-adb8-6b2dbcd1f434")
+		(property "Reference" "C7"
+			(at 168.91 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220p"
+			(at 168.91 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 166.0652 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1285,7 +1544,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 165.1 88.9 0)
+			(at 165.1 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1336,7 +1595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
 			(at 186.69 83.82 0)
 			(effects
 				(font
@@ -1388,7 +1647,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 177.8 88.9 0)
+		(at 177.8 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1397,7 +1656,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c67dd2f-535c-45be-b739-77723771863f")
 		(property "Reference" "C8"
-			(at 181.61 87.6299 0)
+			(at 181.61 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1406,7 +1665,7 @@
 			)
 		)
 		(property "Value" "220p"
-			(at 181.61 90.1699 0)
+			(at 181.61 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1414,8 +1673,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 178.7652 92.71 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 178.7652 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1424,7 +1683,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 88.9 0)
+			(at 177.8 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1433,7 +1692,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 177.8 88.9 0)
+			(at 177.8 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1550,7 +1809,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 138.1252 66.04 0)
 			(effects
 				(font
@@ -1587,6 +1846,81 @@
 			(project "jukebox"
 				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 154.94 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85c2b8aa-0cad-4755-a01c-a261c06481bc")
+		(property "Reference" "FB1"
+			(at 154.9019 71.755 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Ferrite (600ohm @ 100MHz)"
+			(at 167.005 74.295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BLM21:BEADC2012X105N"
+			(at 154.94 80.518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 154.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" ""
+			(at 154.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1a39ddb-f1e6-4601-bc9e-e7d6fae5bd91")
+		)
+		(pin "2"
+			(uuid "09a4b89e-7608-42f7-b40a-dfd0e2c8977a")
+		)
+		(instances
+			(project ""
+				(path "/d400bd10-35e9-4717-b347-ccb991be6072/58aa8eb1-6419-4649-9641-e1795f62a7f1"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -1713,6 +2047,14 @@
 				(hide yes)
 			)
 		)
+		(property "Purpose" ""
+			(at 137.16 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "9c490358-9940-4573-9b58-de482533fb89")
 		)
@@ -1801,7 +2143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 150.8252 66.04 0)
 			(effects
 				(font
