@@ -5,7 +5,7 @@
 void setup() {
     audioSetup();
     rfidSetup();
-    // playSong("aria-mono.wav"); // Start with a default song
+    // playSong("aria.wav"); // Start with a default song
 }
 
 void loop() {

@@ -57,6 +57,7 @@ void audioSetup() {
 void audioLoop() {
     int potValue = analogRead(POT_PIN);
     float gain = potValue / 4095.0;
+    // float gain = 0.5; // Set gain to 50% for basic test
     if (out) out->SetGain(gain);
 
     if (wav && wav->isRunning()) {

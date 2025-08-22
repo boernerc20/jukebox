@@ -1374,7 +1374,7 @@
 		)
 		(uuid "ee221973-9e83-4a2d-9edf-aec78718379c")
 	)
-	(global_label "VDD33"
+	(global_label "EXT_5V"
 		(shape input)
 		(at 137.16 50.8 0)
 		(fields_autoplaced yes)
@@ -1386,7 +1386,7 @@
 		)
 		(uuid "1a5d1404-c852-4d1f-ada7-e7b47f1a3cb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.1928 50.8 0)
+			(at 146.737 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
