@@ -1,6 +1,6 @@
 # UNDER CONSTRUCTION
 
-Electronics are finishing and ready for jukebox enclosure:
+Electronics are finished and ready for jukebox enclosure:
 
 <p align="center">
   <img src="3.Images/electronics.JPG" width="300"/>
